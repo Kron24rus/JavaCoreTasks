@@ -1,0 +1,22 @@
+plugins {
+    id 'java'
+    id 'com.github.johnrengelman.shadow'
+}
+
+sourceCompatibility = JavaVersion.VERSION_17
+targetCompatibility = JavaVersion.VERSION_17
+
+dependencies {
+    implementation("ch.qos.logback:logback-classic")
+}
+
+shadowJar {
+    archiveBaseName.set('Multithreads counter')
+    archiveVersion.set('0.1')
+    archiveClassifier.set('')
+    manifest {
+        attributes 'Main-Class': 'ru.mikheev.Main'
+    }
+}
+
+tasks.build.dependsOn tasks.shadowJar
