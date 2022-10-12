@@ -3,4 +3,5 @@ include 'hw01-gradle'
 include 'hw02-collections'
 include 'hw05-aop'
 include 'hw15-counter'
+include 'hw16-collections'
 
