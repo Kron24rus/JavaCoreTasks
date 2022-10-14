@@ -28,6 +28,8 @@ allprojects {
                 mavenBom("org.springframework.boot:spring-boot-dependencies:2.7.4")
             }
             dependency("com.google.guava:guava:${Versions.guava}")
+            dependency("org.glassfish:jakarta.json:${Versions.glassfishJson}")
+            dependency("com.google.protobuf:protobuf-java-util:${Versions.protobuf}")
         }
     }
 }
